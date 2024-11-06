@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aptitude Section</h2>
+    <form id="aptitudeForm">
+        <!-- 3 Questions on Averages -->
+        <div class="question">
+            <p>1. The average of 50 numbers is 38. If two numbers, 45 and 55, are added to the list, what will be the new average?</p>
+            <label><input type="radio" name="aptitude1" value="a"> 38.5</label>
+            <label><input type="radio" name="aptitude1" value="b"> 39</label>
+            <label><input type="radio" name="aptitude1" value="c"> 40</label>
+            <label><input type="radio" name="aptitude1" value="d"> 41</label>
+        </div>
+        <div class="question">
+            <p>2. The average age of 20 students in a class is 15 years. When a teacher's age is included, the average age increases by 1 year. What is the age of the teacher?</p>
+            <label><input type="radio" name="aptitude2" value="a"> 35 years</label>
+            <label><input type="radio" name="aptitude2" value="b"> 36 years</label>
+            <label><input type="radio" name="aptitude2" value="c"> 37 years</label>
+            <label><input type="radio" name="aptitude2" value="d"> 38 years</label>
+        </div>
+        <div class="question">
+            <p>3. The average weight of a group of 10 people decreases by 1 kg when a person weighing 70 kg is replaced by another person. What is the weight of the new person?</p>
+            <label><input type="radio" name="aptitude3" value="a"> 60 kg</label>
+            <label><input type="radio" name="aptitude3" value="b"> 65 kg</label>
+            <label><input type="radio" name="aptitude3" value="c"> 70 kg</label>
+            <label><input type="radio" name="aptitude3" value="d"> 75 kg</label>
+        </div>
+
+        <!-- 3 Questions on Simple Interest & Compound Interest -->
+        <div class="question">
+            <p>4. What is the simple interest on a sum of ₹15000 at 10% per annum for 3 years?</p>
+            <label><input type="radio" name="aptitude4" value="a"> ₹4000</label>
+            <label><input type="radio" name="aptitude4" value="b"> ₹4500</label>
+            <label><input type="radio" name="aptitude4" value="c"> ₹5000</label>
+            <label><input type="radio" name="aptitude4" value="d"> ₹5500</label>
+        </div>
+        <div class="question">
+            <p>5. A sum of ₹5000 becomes ₹6050 in 2 years at compound interest. What is the rate of interest?</p>
+            <label><input type="radio" name="aptitude5" value="a"> 8%</label>
+            <label><input type="radio" name="aptitude5" value="b"> 9%</label>
+            <label><input type="radio" name="aptitude5" value="c"> 10%</label>
+            <label><input type="radio" name="aptitude5" value="d"> 12%</label>
+        </div>
+        <div class="question">
+            <p>6. What is the compound interest on ₹2000 at 5% per annum for 3 years, compounded annually?</p>
+            <label><input type="radio" name="aptitude6" value="a"> ₹315.25</label>
+            <label><input type="radio" name="aptitude6" value="b"> ₹315</label>
+            <label><input type="radio" name="aptitude6" value="c"> ₹312.50</label>
+            <label><input type="radio" name="aptitude6" value="d"> ₹310</label>
+        </div>
+
+        <!-- 3 Questions on Permutation & Combination -->
+        <div class="question">
+            <p>7. How many ways can 5 people be seated in a row if two particular people must always sit together?</p>
+            <label><input type="radio" name="aptitude7" value="a"> 48</label>
+            <label><input type="radio" name="aptitude7" value="b"> 96</label>
+            <label><input type="radio" name="aptitude7" value="c"> 120</label>
+            <label><input type="radio" name="aptitude7" value="d"> 240</label>
+        </div>
+        <div class="question">
+            <p>8. In how many ways can 6 people be divided into 2 teams of 3 each?</p>
+            <label><input type="radio" name="aptitude8" value="a"> 10</label>
+            <label><input type="radio" name="aptitude8" value="b"> 20</label>
+            <label><input type="radio" name="aptitude8" value="c"> 30</label>
+            <label><input type="radio" name="aptitude8" value="d"> 40</label>
+        </div>
+        <div class="question">
+            <p>9. How many different ways can the letters of the word "PERMUTATION" be arranged?</p>
+            <label><input type="radio" name="aptitude9" value="a"> 1663200</label>
+            <label><input type="radio" name="aptitude9" value="b"> 1814400</label>
+            <label><input type="radio" name="aptitude9" value="c"> 19958400</label>
+            <label><input type="radio" name="aptitude9" value="d"> 3326400</label>
+        </div>
+
+        <!-- 3 Questions on Calendars -->
+        <div class="question">
+            <p>10. What day of the week was 1st January 2000?</p>
+            <label><input type="radio" name="aptitude10" value="a"> Saturday</label>
+            <label><input type="radio" name="aptitude10" value="b"> Sunday</label>
+            <label><input type="radio" name="aptitude10" value="c"> Monday</label>
+            <label><input type="radio" name="aptitude10" value="d"> Tuesday</label>
+        </div>
+        <div class="question">
+            <p>11. If today is Wednesday, what will be the day of the week 50 days from today?</p>
+            <label><input type="radio" name="aptitude11" value="a"> Monday</label>
+            <label><input type="radio" name="aptitude11" value="b"> Wednesday</label>
+            <label><input type="radio" name="aptitude11" value="c"> Friday</label>
+            <label><input type="radio" name="aptitude11" value="d"> Saturday</label>
+        </div>
+        <div class="question">
+            <p>12. What was the day of the week on 15th August 1947?</p>
+            <label><input type="radio" name="aptitude12" value="a"> Thursday</label>
+            <label><input type="radio" name="aptitude12" value="b"> Friday</label>
+            <label><input type="radio" name="aptitude12" value="c"> Saturday</label>
+            <label><input type="radio" name="aptitude12" value="d"> Sunday</label>
+        </div>
+
+        <!-- 3 Questions on Time, Speed, Distance -->
+        <div class="question">
+            <p>13. A car travels 300 km in 5 hours. How long will it take to travel 450 km at the same speed?</p>
+            <label><input type="radio" name="aptitude13" value="a"> 4 hours</label>
+            <label><input type="radio" name="aptitude13" value="b"> 5 hours</label>
+            <label><input type="radio" name="aptitude13" value="c"> 3.5 hours</label>
+            <label><input type="radio" name="aptitude13" value="d"> 6 hours</label>
+        </div>
+        <div class="question">
+            <p>14. Two trains are moving towards each other at speeds of 50 km/h and 60 km/h. If they are 220 km apart, how long will it take for them to meet?</p>
+            <label><input type="radio" name="aptitude14" value="a"> 2 hours</label>
+            <label><input type="radio" name="aptitude14" value="b"> 2.5 hours</label>
+            <label><input type="radio" name="aptitude14" value="c"> 1.5 hours</label>
+            <label><input type="radio" name="aptitude14" value="d"> 3 hours</label>
+        </div>
+        <div class="question">
+            <p>15. A man walks at a speed of 6 km/h and runs at a speed of 10 km/h. If he covers 24 km in 4 hours, how much time did he spend walking?</p>
+            <label><input type="radio" name="aptitude15" value="a"> 2.5 hours</label>
+            <label><input type="radio" name="aptitude15" value="b"> 3 hours</label>
+            <label><input type="radio" name="aptitude15" value="c"> 1.5 hours</label>
+            <label><input type="radio" name="aptitude15" value="d"> 1 hour</label>
+        </div>
+
+        <button type="button" onclick="submitAptitude()">Submit</button>
+    </form>
+
+    <script>
+        function submitAptitude() {
+            const aptitudeAnswers = {};
+            const form = document.getElementById('aptitudeForm');
+            for (let i = 1; i <= 15; i++) {
+                const answer = form[`aptitude${i}`] ? form[`aptitude${i}`].value : null;
+                aptitudeAnswers[`aptitude${i}`] = answer;
+            }
+            localStorage.setItem('aptitudeAnswers', JSON.stringify(aptitudeAnswers));
+            window.location.href = 'technical.html';
+        }
+    </script>
+</body>
+</html>

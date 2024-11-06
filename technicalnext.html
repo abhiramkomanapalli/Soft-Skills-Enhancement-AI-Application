@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            cursor: pointer;
+            color: #f9f9f9;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Technical Topics</h1>
+
+    <h2 onclick="toggleContent('programming')">1. Programming Languages</h2>
+    <div id="programming" class="content">
+        <p>Programming languages allow developers to communicate instructions to a computer. Understanding different languages is essential for building various applications. Here are some common questions:</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is Python used for?</p>
+                <button onclick="toggleAnswer('programming1')">Show Answer</button>
+                <div id="programming1" class="answer">Answer: Python is a versatile language used for web development, data science, automation, and more.</div>
+            </div>
+            <div>
+                <p>2. What is the purpose of JavaScript?</p>
+                <button onclick="toggleAnswer('programming2')">Show Answer</button>
+                <div id="programming2" class="answer">Answer: JavaScript is primarily used to create interactive elements on web pages.</div>
+            </div>
+            <div>
+                <p>3. What is the difference between Java and C++?</p>
+                <button onclick="toggleAnswer('programming3')">Show Answer</button>
+                <div id="programming3" class="answer">Answer: Java is platform-independent with automatic memory management, while C++ provides more control over hardware but lacks built-in garbage collection.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('dataStructures')">2. Data Structures</h2>
+    <div id="dataStructures" class="content">
+        <p>Data structures organize and store data efficiently, enabling faster processing. Mastering data structures is crucial for writing optimized code.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is an array?</p>
+                <button onclick="toggleAnswer('dataStructures1')">Show Answer</button>
+                <div id="dataStructures1" class="answer">Answer: An array is a collection of items stored at contiguous memory locations, accessible via an index.</div>
+            </div>
+            <div>
+                <p>2. What is a linked list?</p>
+                <button onclick="toggleAnswer('dataStructures2')">Show Answer</button>
+                <div id="dataStructures2" class="answer">Answer: A linked list is a linear data structure where elements are linked using pointers, allowing efficient insertion and deletion.</div>
+            </div>
+            <div>
+                <p>3. What is the difference between a stack and a queue?</p>
+                <button onclick="toggleAnswer('dataStructures3')">Show Answer</button>
+                <div id="dataStructures3" class="answer">Answer: A stack follows LIFO (Last In, First Out) order, while a queue follows FIFO (First In, First Out) order.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('algorithms')">3. Algorithms</h2>
+    <div id="algorithms" class="content">
+        <p>Algorithms are step-by-step procedures for solving problems. Proficiency in algorithms helps in optimizing solutions and improving performance.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is a binary search?</p>
+                <button onclick="toggleAnswer('algorithm1')">Show Answer</button>
+                <div id="algorithm1" class="answer">Answer: Binary search is a search algorithm that divides the search interval in half, reducing the time complexity to O(log n).</div>
+            </div>
+            <div>
+                <p>2. What is Big O notation?</p>
+                <button onclick="toggleAnswer('algorithm2')">Show Answer</button>
+                <div id="algorithm2" class="answer">Answer: Big O notation is a mathematical notation used to describe the time and space complexity of an algorithm.</div>
+            </div>
+            <div>
+                <p>3. What is recursion?</p>
+                <button onclick="toggleAnswer('algorithm3')">Show Answer</button>
+                <div id="algorithm3" class="answer">Answer: Recursion is a method where a function calls itself to solve a problem, often used in divide and conquer algorithms.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('databases')">4. Databases</h2>
+    <div id="databases" class="content">
+        <p>Databases store and manage large volumes of data efficiently. Understanding databases is crucial for backend development and data handling.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is SQL?</p>
+                <button onclick="toggleAnswer('database1')">Show Answer</button>
+                <div id="database1" class="answer">Answer: SQL (Structured Query Language) is a language used to manage and manipulate relational databases.</div>
+            </div>
+            <div>
+                <p>2. What is normalization?</p>
+                <button onclick="toggleAnswer('database2')">Show Answer</button>
+                <div id="database2" class="answer">Answer: Normalization is a process that organizes data to reduce redundancy and improve data integrity.</div>
+            </div>
+            <div>
+                <p>3. What is a primary key?</p>
+                <button onclick="toggleAnswer('database3')">Show Answer</button>
+                <div id="database3" class="answer">Answer: A primary key is a unique identifier for each record in a table, ensuring data integrity.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('networking')">5. Networking</h2>
+    <div id="networking" class="content">
+        <p>Networking is essential for communication between devices over the internet or local networks. It includes protocols and infrastructure that ensure connectivity.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is an IP address?</p>
+                <button onclick="toggleAnswer('networking1')">Show Answer</button>
+                <div id="networking1" class="answer">Answer: An IP address is a unique address assigned to each device on a network, allowing identification and communication.</div>
+            </div>
+            <div>
+                <p>2. What is the difference between TCP and UDP?</p>
+                <button onclick="toggleAnswer('networking2')">Show Answer</button>
+                <div id="networking2" class="answer">Answer: TCP is a connection-oriented protocol that ensures data delivery, while UDP is connectionless, focusing on speed over reliability.</div>
+            </div>
+            <div>
+                <p>3. What is DNS?</p>
+                <button onclick="toggleAnswer('networking3')">Show Answer</button>
+                <div id="networking3" class="answer">Answer: DNS (Domain Name System) translates domain names to IP addresses, enabling web browsing.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+        
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

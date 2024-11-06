@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #d097ec);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .question {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #667eea;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .navigation {
+        margin: 20px 0;
+        text-align: center; /* Center the button */
+    }
+    </style>
+</head>
+<body>
+    <h1>Vocabulary Questions</h1>
+    
+    <div class="question">
+        <h3>1. Choose the correct synonym of "Impecunious"</h3>
+        <label><input type="radio" name="q1" value="a"> Wealthy</label>
+        <label><input type="radio" name="q1" value="b"> Destitute</label>
+        <label><input type="radio" name="q1" value="c"> Generous</label>
+        <label><input type="radio" name="q1" value="d"> Thriving</label>
+        <button onclick="showAnswer('answer1')">Show Answer</button>
+        <div id="answer1" class="answer">Correct Answer: b. Destitute <br>Explanation: 'Impecunious' means having little or no money; penniless.</div>
+    </div>
+
+    <div class="question">
+        <h3>2. Choose the correct synonym of "Lugubrious"</h3>
+        <label><input type="radio" name="q2" value="a"> Cheerful</label>
+        <label><input type="radio" name="q2" value="b"> Mournful</label>
+        <label><input type="radio" name="q2" value="c"> Energetic</label>
+        <label><input type="radio" name="q2" value="d"> Bright</label>
+        <button onclick="showAnswer('answer2')">Show Answer</button>
+        <div id="answer2" class="answer">Correct Answer: b. Mournful <br>Explanation: 'Lugubrious' means looking or sounding sad and dismal.</div>
+    </div>
+
+    <div class="question">
+        <h3>3. Choose the correct antonym of "Ephemeral"</h3>
+        <label><input type="radio" name="q3" value="a"> Permanent</label>
+        <label><input type="radio" name="q3" value="b"> Temporary</label>
+        <label><input type="radio" name="q3" value="c"> Fleeting</label>
+        <label><input type="radio" name="q3" value="d"> Transitory</label>
+        <button onclick="showAnswer('answer3')">Show Answer</button>
+        <div id="answer3" class="answer">Correct Answer: a. Permanent <br>Explanation: 'Ephemeral' means lasting for a very short time; its antonym is 'permanent.'</div>
+    </div>
+
+    <div class="question">
+        <h3>4. Choose the correct antonym of "Truculent"</h3>
+        <label><input type="radio" name="q4" value="a"> Aggressive</label>
+        <label><input type="radio" name="q4" value="b"> Pugnacious</label>
+        <label><input type="radio" name="q4" value="c"> Gentle</label>
+        <label><input type="radio" name="q4" value="d"> Combative</label>
+        <button onclick="showAnswer('answer4')">Show Answer</button>
+        <div id="answer4" class="answer">Correct Answer: c. Gentle <br>Explanation: 'Truculent' means eager or quick to argue or fight; its antonym is 'gentle.'</div>
+    </div>
+
+    <div class="question">
+        <h3>5. One who walks in sleep is called:</h3>
+        <label><input type="radio" name="q5" value="a"> Insomniac</label>
+        <label><input type="radio" name="q5" value="b"> Somnambulist</label>
+        <label><input type="radio" name="q5" value="c"> Hypochondriac</label>
+        <label><input type="radio" name="q5" value="d"> Cynic</label>
+        <button onclick="showAnswer('answer5')">Show Answer</button>
+        <div id="answer5" class="answer">Correct Answer: b. Somnambulist <br>Explanation: A 'somnambulist' is a person who walks in their sleep.</div>
+    </div>
+
+    <div class="question">
+        <h3>6. A person who believes in fate is called:</h3>
+        <label><input type="radio" name="q6" value="a"> Fatalist</label>
+        <label><input type="radio" name="q6" value="b"> Agnostic</label>
+        <label><input type="radio" name="q6" value="c"> Atheist</label>
+        <label><input type="radio" name="q6" value="d"> Pessimist</label>
+        <button onclick="showAnswer('answer6')">Show Answer</button>
+        <div id="answer6" class="answer">Correct Answer: a. Fatalist <br>Explanation: A 'fatalist' is a person who believes that events are predetermined and inevitable.</div>
+    </div>
+
+    <div class="question">
+        <h3>7. What does the idiom "Bite the bullet" mean?</h3>
+        <label><input type="radio" name="q7" value="a"> To endure a painful experience</label>
+        <label><input type="radio" name="q7" value="b"> To lose hope</label>
+        <label><input type="radio" name="q7" value="c"> To procrastinate</label>
+        <label><input type="radio" name="q7" value="d"> To take a shortcut</label>
+        <button onclick="showAnswer('answer7')">Show Answer</button>
+        <div id="answer7" class="answer">Correct Answer: a. To endure a painful experience <br>Explanation: The idiom 'bite the bullet' means to face a difficult situation with courage.</div>
+    </div>
+
+    <div class="question">
+        <h3>8. What does the idiom "Hit the sack" mean?</h3>
+        <label><input type="radio" name="q8" value="a"> To go to sleep</label>
+        <label><input type="radio" name="q8" value="b"> To quit a job</label>
+        <label><input type="radio" name="q8" value="c"> To get injured</label>
+        <label><input type="radio" name="q8" value="d"> To start exercising</label>
+        <button onclick="showAnswer('answer8')">Show Answer</button>
+        <div id="answer8" class="answer">Correct Answer: a. To go to sleep <br>Explanation: The idiom 'hit the sack' means to go to bed.</div>
+    </div>
+
+    <div class="question">
+        <h3>9. Identify the correct sentence:</h3>
+        <label><input type="radio" name="q9" value="a"> I am knowing the answer to this question.</label>
+        <label><input type="radio" name="q9" value="b"> I know the answer to this question.</label>
+        <label><input type="radio" name="q9" value="c"> I has known the answer to this question.</label>
+        <label><input type="radio" name="q9" value="d"> I will be know the answer to this question.</label>
+        <button onclick="showAnswer('answer9')">Show Answer</button>
+        <div id="answer9" class="answer">Correct Answer: b. I know the answer to this question. <br>Explanation: This sentence is in the present simple tense, which is correct for stating facts.</div>
+    </div>
+
+    <div class="question">
+        <h3>10. Choose the sentence with the correct grammar:</h3>
+        <label><input type="radio" name="q10" value="a"> She don't like pizza.</label>
+        <label><input type="radio" name="q10" value="b"> She doesn't likes pizza.</label>
+        <label><input type="radio" name="q10" value="c"> She doesn't like pizza.</label>
+        <label><input type="radio" name="q10" value="d"> She don't likes pizza.</label>
+        <button onclick="showAnswer('answer10')">Show Answer</button>
+        <div id="answer10" class="answer">Correct Answer: c. She doesn't like pizza. <br>Explanation: This sentence is correct because it uses the proper contraction and verb form.</div>
+    </div>
+
+    <div class="question">
+        <h3>11. He is the ______ of the project.</h3>
+        <label><input type="radio" name="q11" value="a"> leader</label>
+        <label><input type="radio" name="q11" value="b"> leading</label>
+        <label><input type="radio" name="q11" value="c"> leaded</label>
+        <label><input type="radio" name="q11" value="d"> leads</label>
+        <button onclick="showAnswer('answer11')">Show Answer</button>
+        <div id="answer11" class="answer">Correct Answer: a. leader <br>Explanation: 'Leader' is the correct noun form for a person who leads a project.</div>
+    </div>
+
+    <div class="question">
+        <h3>12. The cat sat ______ the mat.</h3>
+        <label><input type="radio" name="q12" value="a"> in</label>
+        <label><input type="radio" name="q12" value="b"> on</label>
+        <label><input type="radio" name="q12" value="c"> at</label>
+        <label><input type="radio" name="q12" value="d"> to</label>
+        <button onclick="showAnswer('answer12')">Show Answer</button>
+        <div id="answer12" class="answer">Correct Answer: b. on <br>Explanation: 'On' is the correct preposition to indicate the cat's position relative to the mat.</div>
+    </div>
+
+    <div class="question">
+        <h3>13. What does the phrase "Cut to the chase" mean?</h3>
+        <label><input type="radio" name="q13" value="a"> To end a conversation</label>
+        <label><input type="radio" name="q13" value="b"> To start a conversation</label>
+        <label><input type="radio" name="q13" value="c"> To start a fight</label>
+        <label><input type="radio" name="q13" value="d"> To take a break</label>
+        <button onclick="showAnswer('answer13')">Show Answer</button>
+        <div id="answer13" class="answer">Correct Answer: a. To end a conversation <br>Explanation: 'Cut to the chase' means to get to the point without wasting time.</div>
+    </div>
+
+    <div class="question">
+        <h3>14. Which of the following is a one-word substitution for "A person who writes poems"?</h3>
+        <label><input type="radio" name="q14" value="a"> Poet</label>
+        <label><input type="radio" name="q14" value="b"> Prose</label>
+        <label><input type="radio" name="q14" value="c"> Playwright</label>
+        <label><input type="radio" name="q14" value="d"> Novelist</label>
+        <button onclick="showAnswer('answer14')">Show Answer</button>
+        <div id="answer14" class="answer">Correct Answer: a. Poet <br>Explanation: A 'poet' is a person who writes poems.</div>
+    </div>
+
+    <div class="question">
+        <h3>15. Fill in the blank: The teacher asked us to _____ the project by next week.</h3>
+        <label><input type="radio" name="q15" value="a"> complete</label>
+        <label><input type="radio" name="q15" value="b"> completed</label>
+        <label><input type="radio" name="q15" value="c"> completing</label>
+        <label><input type="radio" name="q15" value="d"> completes</label>
+        <button onclick="showAnswer('answer15')">Show Answer</button>
+        <div id="answer15" class="answer">Correct Answer: a. complete <br>Explanation: 'Complete' is the correct form to use in this sentence.</div>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='vocabnext.html'">Vocabulary Topics</button>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='dashboard.html'">Back to home</button>
+    </div>
+    
+
+    <script>
+        function showAnswer(answerId) {
+            var answerDiv = document.getElementById(answerId);
+            answerDiv.style.display = answerDiv.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            cursor: pointer;
+            color: #f9f9f9;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grammar Topics</h1>
+
+    <h2 onclick="toggleContent('partsOfSpeech')">Parts of Speech</h2>
+    <div id="partsOfSpeech" class="content">
+        <p>Parts of speech are the building blocks of grammar. They include nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, and interjections. Understanding how each part functions helps in constructing correct sentences.</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. Identify the verb in the sentence: "The dog barks loudly."</label>
+            <button onclick="toggleAnswer('answer1')">Show Answer</button>
+            <div id="answer1" class="answer">Answer: "barks" (It shows the action performed by the subject).</div>
+        </div>
+        <div class="question">
+            <label>2. What part of speech is "beautiful" in the sentence: "She wore a beautiful dress."</label>
+            <button onclick="toggleAnswer('answer2')">Show Answer</button>
+            <div id="answer2" class="answer">Answer: "beautiful" is an adjective (It describes the noun "dress").</div>
+        </div>
+        <div class="question">
+            <label>3. Choose the pronoun in the sentence: "James and I went to the store."</label>
+            <button onclick="toggleAnswer('answer3')">Show Answer</button>
+            <div id="answer3" class="answer">Answer: "I" (It replaces the noun "James").</div>
+        </div>
+        <div class="question">
+            <label>4. Identify the adverb in the sentence: "He runs very fast."</label>
+            <button onclick="toggleAnswer('answer4')">Show Answer</button>
+            <div id="answer4" class="answer">Answer: "very" (It modifies the adverb "fast").</div>
+        </div>
+        <div class="question">
+            <label>5. What part of speech is "and" in the sentence: "I like tea and coffee."</label>
+            <button onclick="toggleAnswer('answer5')">Show Answer</button>
+            <div id="answer5" class="answer">Answer: "and" is a conjunction (It connects the two nouns "tea" and "coffee").</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('articles')">Articles</h2>
+    <div id="articles" class="content">
+        <p>Articles define a noun as specific or unspecific. The definite article "the" is used for specific nouns, while "a" and "an" are indefinite articles used for non-specific nouns. Use "a" before consonant sounds and "an" before vowel sounds.</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. Fill in the blank: "___ apple a day keeps the doctor away."</label>
+            <button onclick="toggleAnswer('answer6')">Show Answer</button>
+            <div id="answer6" class="answer">Answer: "An" (Use "an" before vowel sounds).</div>
+        </div>
+        <div class="question">
+            <label>2. Choose the correct article: "Can you pass me ___ salt?"</label>
+            <button onclick="toggleAnswer('answer7')">Show Answer</button>
+            <div id="answer7" class="answer">Answer: "the" (It refers to a specific item).</div>
+        </div>
+        <div class="question">
+            <label>3. Which article would you use: "He is ___ honest man."</label>
+            <button onclick="toggleAnswer('answer8')">Show Answer</button>
+            <div id="answer8" class="answer">Answer: "an" (Use "an" before words that start with a vowel sound).</div>
+        </div>
+        <div class="question">
+            <label>4. Choose the correct article: "I want to be ___ astronaut."</label>
+            <button onclick="toggleAnswer('answer9')">Show Answer</button>
+            <div id="answer9" class="answer">Answer: "an" (Use "an" because "astronaut" starts with a vowel sound).</div>
+        </div>
+        <div class="question">
+            <label>5. Fill in the blank: "___ sun rises in the east."</label>
+            <button onclick="toggleAnswer('answer10')">Show Answer</button>
+            <div id="answer10" class="answer">Answer: "The" (It refers to a specific noun).</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('voices')">Voices</h2>
+    <div id="voices" class="content">
+        <p>Voice refers to the relationship between the action expressed by the verb and the participants in the sentence. The two main voices are active voice, where the subject performs the action, and passive voice, where the subject receives the action.</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. Identify the voice in the sentence: "The cat chased the mouse."</label>
+            <button onclick="toggleAnswer('answer11')">Show Answer</button>
+            <div id="answer11" class="answer">Answer: Active voice (The subject "The cat" performs the action).</div>
+        </div>
+        <div class="question">
+            <label>2. Identify the voice in the sentence: "The book was read by her."</label>
+            <button onclick="toggleAnswer('answer12')">Show Answer</button>
+            <div id="answer12" class="answer">Answer: Passive voice (The subject "The book" receives the action).</div>
+        </div>
+        <div class="question">
+            <label>3. Convert to passive voice: "The chef cooks the meal."</label>
+            <button onclick="toggleAnswer('answer13')">Show Answer</button>
+            <div id="answer13" class="answer">Answer: "The meal is cooked by the chef."</div>
+        </div>
+        <div class="question">
+            <label>4. Convert to active voice: "The song was sung by the choir."</label>
+            <button onclick="toggleAnswer('answer14')">Show Answer</button>
+            <div id="answer14" class="answer">Answer: "The choir sang the song."</div>
+        </div>
+        <div class="question">
+            <label>5. Identify the voice in the sentence: "The homework was completed by the students."</label>
+            <button onclick="toggleAnswer('answer15')">Show Answer</button>
+            <div id="answer15" class="answer">Answer: Passive voice (The subject "The homework" receives the action).</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('speeches')">Speeches</h2>
+    <div id="speeches" class="content">
+        <p>Speech refers to the expression of thoughts and feelings through spoken language. It can be formal or informal, and the choice of words, tone, and delivery style greatly affects communication. Understanding different speech types helps in effective communication.</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. What is an example of a formal speech?</label>
+            <button onclick="toggleAnswer('answer16')">Show Answer</button>
+            <div id="answer16" class="answer">Answer: A wedding toast (It is delivered at a formal occasion).</div>
+        </div>
+        <div class="question">
+            <label>2. Identify the type of speech: "Ladies and gentlemen, thank you for being here today."</label>
+            <button onclick="toggleAnswer('answer17')">Show Answer</button>
+            <div id="answer17" class="answer">Answer: Formal speech (It addresses a group with respect).</div>
+        </div>
+        <div class="question">
+            <label>3. What is a persuasive speech?</label>
+            <button onclick="toggleAnswer('answer18')">Show Answer</button>
+            <div id="answer18" class="answer">Answer: A speech aimed at convincing the audience to adopt a certain viewpoint.</div>
+        </div>
+        <div class="question">
+            <label>4. What is the purpose of a motivational speech?</label>
+            <button onclick="toggleAnswer('answer19')">Show Answer</button>
+            <div id="answer19" class="answer">Answer: To inspire and encourage the audience to take action or improve themselves.</div>
+        </div>
+        <div class="question">
+            <label>5. What is an example of informal speech?</label>
+            <button onclick="toggleAnswer('answer20')">Show Answer</button>
+            <div id="answer20" class="answer">Answer: A casual conversation with friends (It lacks formal structure).</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('prepositions')">Prepositions</h2>
+    <div id="prepositions" class="content">
+        <p>Prepositions are words that link nouns, pronouns, or phrases to other words in a sentence. They indicate relationships in terms of time, place, direction, etc. Common prepositions include "in," "on," "at," "by," and "with."</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. Choose the correct preposition: "The book is ___ the table."</label>
+            <button onclick="toggleAnswer('answer21')">Show Answer</button>
+            <div id="answer21" class="answer">Answer: "on" (It indicates the location).</div>
+        </div>
+        <div class="question">
+            <label>2. Fill in the blank: "She arrived ___ 5 PM."</label>
+            <button onclick="toggleAnswer('answer22')">Show Answer</button>
+            <div id="answer22" class="answer">Answer: "at" (It indicates a specific time).</div>
+        </div>
+        <div class="question">
+            <label>3. Which preposition fits best: "He walked ___ the park."</label>
+            <button onclick="toggleAnswer('answer23')">Show Answer</button>
+            <div id="answer23" class="answer">Answer: "through" (It indicates movement within an area).</div>
+        </div>
+        <div class="question">
+            <label>4. Fill in the blank: "The cat jumped ___ the box."</label>
+            <button onclick="toggleAnswer('answer24')">Show Answer</button>
+            <div id="answer24" class="answer">Answer: "into" (It indicates movement towards the inside).</div>
+        </div>
+        <div class="question">
+            <label>5. Choose the correct preposition: "The picture is ___ the wall."</label>
+            <button onclick="toggleAnswer('answer25')">Show Answer</button>
+            <div id="answer25" class="answer">Answer: "on" (It indicates the position of the picture).</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('tenses')">Tenses</h2>
+    <div id="tenses" class="content">
+        <p>Tenses indicate the time of an action or state of being. The three main tenses are past, present, and future. Each of these can be further divided into simple, continuous, perfect, and perfect continuous forms.</p>
+        <p><strong>Examples:</strong></p>
+        <div class="question">
+            <label>1. Identify the tense: "She is studying now."</label>
+            <button onclick="toggleAnswer('answer26')">Show Answer</button>
+            <div id="answer26" class="answer">Answer: Present continuous tense (It indicates an ongoing action).</div>
+        </div>
+        <div class="question">
+            <label>2. Fill in the blank: "I ___ (go) to the store yesterday."</label>
+            <button onclick="toggleAnswer('answer27')">Show Answer</button>
+            <div id="answer27" class="answer">Answer: "went" (Past simple tense).</div>
+        </div>
+        <div class="question">
+            <label>3. Choose the correct form: "He will ___ (finish) his homework tomorrow."</label>
+            <button onclick="toggleAnswer('answer28')">Show Answer</button>
+            <div id="answer28" class="answer">Answer: "finish" (Future simple tense).</div>
+        </div>
+        <div class="question">
+            <label>4. Identify the tense: "They have lived here for five years."</label>
+            <button onclick="toggleAnswer('answer29')">Show Answer</button>
+            <div id="answer29" class="answer">Answer: Present perfect tense (It indicates an action that started in the past and continues).</div>
+        </div>
+        <div class="question">
+            <label>5. Fill in the blank: "She ___ (read) a book at 8 PM last night."</label>
+            <button onclick="toggleAnswer('answer30')">Show Answer</button>
+            <div id="answer30" class="answer">Answer: "was reading" (Past continuous tense).</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

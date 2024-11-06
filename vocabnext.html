@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            cursor: pointer;
+            color: #f9f9f9;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vocabulary Topics</h1>
+
+    <h2 onclick="toggleContent('synonyms')">1. Synonyms</h2>
+    <div id="synonyms" class="content">
+        <p>Synonyms are words that have similar meanings. They are useful for avoiding repetition and enriching vocabulary. For example, "happy" can be replaced with "joyful." Mastering synonyms enhances communication skills and makes writing more engaging. Here are example questions to practice synonyms.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is a synonym for "happy"?</p>
+                <button onclick="toggleAnswer('synonym1')">Show Answer</button>
+                <div id="synonym1" class="answer">Answer: Joyful</div>
+            </div>
+            <div>
+                <p>2. What is a synonym for "fast"?</p>
+                <button onclick="toggleAnswer('synonym2')">Show Answer</button>
+                <div id="synonym2" class="answer">Answer: Quick</div>
+            </div>
+            <div>
+                <p>3. What is a synonym for "difficult"?</p>
+                <button onclick="toggleAnswer('synonym3')">Show Answer</button>
+                <div id="synonym3" class="answer">Answer: Hard</div>
+            </div>
+            <div>
+                <p>4. What is a synonym for "small"?</p>
+                <button onclick="toggleAnswer('synonym4')">Show Answer</button>
+                <div id="synonym4" class="answer">Answer: Little</div>
+            </div>
+            <div>
+                <p>5. What is a synonym for "big"?</p>
+                <button onclick="toggleAnswer('synonym5')">Show Answer</button>
+                <div id="synonym5" class="answer">Answer: Large</div>
+            </div>
+            <div>
+                <p>6. What is a synonym for "smart"?</p>
+                <button onclick="toggleAnswer('synonym6')">Show Answer</button>
+                <div id="synonym6" class="answer">Answer: Intelligent</div>
+            </div>
+            <div>
+                <p>7. What is a synonym for "angry"?</p>
+                <button onclick="toggleAnswer('synonym7')">Show Answer</button>
+                <div id="synonym7" class="answer">Answer: Furious</div>
+            </div>
+            <div>
+                <p>8. What is a synonym for "beautiful"?</p>
+                <button onclick="toggleAnswer('synonym8')">Show Answer</button>
+                <div id="synonym8" class="answer">Answer: Attractive</div>
+            </div>
+            <div>
+                <p>9. What is a synonym for "strong"?</p>
+                <button onclick="toggleAnswer('synonym9')">Show Answer</button>
+                <div id="synonym9" class="answer">Answer: Powerful</div>
+            </div>
+            <div>
+                <p>10. What is a synonym for "quiet"?</p>
+                <button onclick="toggleAnswer('synonym10')">Show Answer</button>
+                <div id="synonym10" class="answer">Answer: Silent</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('antonyms')">2. Antonyms</h2>
+    <div id="antonyms" class="content">
+        <p>Antonyms are words that have opposite meanings. Understanding antonyms is important for effective communication, as they can clarify meanings and provide contrast. For example, the antonym of "happy" is "sad." Mastering antonyms enriches vocabulary and improves expression. Here are example questions to practice antonyms.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is the antonym of "happy"?</p>
+                <button onclick="toggleAnswer('antonym1')">Show Answer</button>
+                <div id="antonym1" class="answer">Answer: Sad</div>
+            </div>
+            <div>
+                <p>2. What is the antonym of "hot"?</p>
+                <button onclick="toggleAnswer('antonym2')">Show Answer</button>
+                <div id="antonym2" class="answer">Answer: Cold</div>
+            </div>
+            <div>
+                <p>3. What is the antonym of "tall"?</p>
+                <button onclick="toggleAnswer('antonym3')">Show Answer</button>
+                <div id="antonym3" class="answer">Answer: Short</div>
+            </div>
+            <div>
+                <p>4. What is the antonym of "light"?</p>
+                <button onclick="toggleAnswer('antonym4')">Show Answer</button>
+                <div id="antonym4" class="answer">Answer: Heavy</div>
+            </div>
+            <div>
+                <p>5. What is the antonym of "strong"?</p>
+                <button onclick="toggleAnswer('antonym5')">Show Answer</button>
+                <div id="antonym5" class="answer">Answer: Weak</div>
+            </div>
+            <div>
+                <p>6. What is the antonym of "fast"?</p>
+                <button onclick="toggleAnswer('antonym6')">Show Answer</button>
+                <div id="antonym6" class="answer">Answer: Slow</div>
+            </div>
+            <div>
+                <p>7. What is the antonym of "happy"?</p>
+                <button onclick="toggleAnswer('antonym7')">Show Answer</button>
+                <div id="antonym7" class="answer">Answer: Sad</div>
+            </div>
+            <div>
+                <p>8. What is the antonym of "easy"?</p>
+                <button onclick="toggleAnswer('antonym8')">Show Answer</button>
+                <div id="antonym8" class="answer">Answer: Difficult</div>
+            </div>
+            <div>
+                <p>9. What is the antonym of "rich"?</p>
+                <button onclick="toggleAnswer('antonym9')">Show Answer</button>
+                <div id="antonym9" class="answer">Answer: Poor</div>
+            </div>
+            <div>
+                <p>10. What is the antonym of "full"?</p>
+                <button onclick="toggleAnswer('antonym10')">Show Answer</button>
+                <div id="antonym10" class="answer">Answer: Empty</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('phrases')">3. Phrases</h2>
+    <div id="phrases" class="content">
+        <p>Phrases are groups of words that express a specific idea. They are important for effective communication and often add richness to language. For example, the phrase "kick the bucket" means to die. Understanding phrases enhances comprehension and expression. Here are example questions to practice phrases.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What does the phrase "kick the bucket" mean?</p>
+                <button onclick="toggleAnswer('phrase1')">Show Answer</button>
+                <div id="phrase1" class="answer">Answer: To die</div>
+            </div>
+            <div>
+                <p>2. What does the phrase "break the ice" mean?</p>
+                <button onclick="toggleAnswer('phrase2')">Show Answer</button>
+                <div id="phrase2" class="answer">Answer: To initiate conversation</div>
+            </div>
+            <div>
+                <p>3. What does the phrase "spill the beans" mean?</p>
+                <button onclick="toggleAnswer('phrase3')">Show Answer</button>
+                <div id="phrase3" class="answer">Answer: To reveal a secret</div>
+            </div>
+            <div>
+                <p>4. What does the phrase "under the weather" mean?</p>
+                <button onclick="toggleAnswer('phrase4')">Show Answer</button>
+                <div id="phrase4" class="answer">Answer: Feeling unwell</div>
+            </div>
+            <div>
+                <p>5. What does the phrase "hit the nail on the head" mean?</p>
+                <button onclick="toggleAnswer('phrase5')">Show Answer</button>
+                <div id="phrase5" class="answer">Answer: To be exactly correct</div>
+            </div>
+            <div>
+                <p>6. What does the phrase "the ball is in your court" mean?</p>
+                <button onclick="toggleAnswer('phrase6')">Show Answer</button>
+                <div id="phrase6" class="answer">Answer: It's your decision now</div>
+            </div>
+            <div>
+                <p>7. What does the phrase "let the cat out of the bag" mean?</p>
+                <button onclick="toggleAnswer('phrase7')">Show Answer</button>
+                <div id="phrase7" class="answer">Answer: To reveal a secret</div>
+            </div>
+            <div>
+                <p>8. What does the phrase "jump on the bandwagon" mean?</p>
+                <button onclick="toggleAnswer('phrase8')">Show Answer</button>
+                <div id="phrase8" class="answer">Answer: To join a popular activity</div>
+            </div>
+            <div>
+                <p>9. What does the phrase "burn the midnight oil" mean?</p>
+                <button onclick="toggleAnswer('phrase9')">Show Answer</button>
+                <div id="phrase9" class="answer">Answer: To stay up late working</div>
+            </div>
+            <div>
+                <p>10. What does the phrase "bite the bullet" mean?</p>
+                <button onclick="toggleAnswer('phrase10')">Show Answer</button>
+                <div id="phrase10" class="answer">Answer: To endure a painful situation</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('idioms')">4. Idioms</h2>
+    <div id="idioms" class="content">
+        <p>Idioms are expressions whose meanings are not deducible from the individual words. For example, "piece of cake" means something easy. Learning idioms is crucial for understanding colloquial speech and writing, enriching language skills. Here are example questions to practice idioms.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What does the idiom "piece of cake" mean?</p>
+                <button onclick="toggleAnswer('idiom1')">Show Answer</button>
+                <div id="idiom1" class="answer">Answer: Something very easy</div>
+            </div>
+            <div>
+                <p>2. What does the idiom "burn the midnight oil" mean?</p>
+                <button onclick="toggleAnswer('idiom2')">Show Answer</button>
+                <div id="idiom2" class="answer">Answer: To work late into the night</div>
+            </div>
+            <div>
+                <p>3. What does the idiom "hit the hay" mean?</p>
+                <button onclick="toggleAnswer('idiom3')">Show Answer</button>
+                <div id="idiom3" class="answer">Answer: To go to bed</div>
+            </div>
+            <div>
+                <p>4. What does the idiom "break a leg" mean?</p>
+                <button onclick="toggleAnswer('idiom4')">Show Answer</button>
+                <div id="idiom4" class="answer">Answer: Good luck</div>
+            </div>
+            <div>
+                <p>5. What does the idiom "barking up the wrong tree" mean?</p>
+                <button onclick="toggleAnswer('idiom5')">Show Answer</button>
+                <div id="idiom5" class="answer">Answer: To make a wrong assumption</div>
+            </div>
+            <div>
+                <p>6. What does the idiom "let the cat out of the bag" mean?</p>
+                <button onclick="toggleAnswer('idiom6')">Show Answer</button>
+                <div id="idiom6" class="answer">Answer: To reveal a secret</div>
+            </div>
+            <div>
+                <p>7. What does the idiom "once in a blue moon" mean?</p>
+                <button onclick="toggleAnswer('idiom7')">Show Answer</button>
+                <div id="idiom7" class="answer">Answer: Rarely</div>
+            </div>
+            <div>
+                <p>8. What does the idiom "under the weather" mean?</p>
+                <button onclick="toggleAnswer('idiom8')">Show Answer</button>
+                <div id="idiom8" class="answer">Answer: Feeling ill</div>
+            </div>
+            <div>
+                <p>9. What does the idiom "bite the bullet" mean?</p>
+                <button onclick="toggleAnswer('idiom9')">Show Answer</button>
+                <div id="idiom9" class="answer">Answer: To face a difficult situation</div>
+            </div>
+            <div>
+                <p>10. What does the idiom "the ball is in your court" mean?</p>
+                <button onclick="toggleAnswer('idiom10')">Show Answer</button>
+                <div id="idiom10" class="answer">Answer: It’s your decision now</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('oneWordSubstitutions')">5. One Word Substitutions</h2>
+    <div id="oneWordSubstitutions" class="content">
+        <p>One-word substitutions are single words that can replace a phrase with a more concise meaning. For example, the phrase "one who loves books" can be substituted with "bibliophile." Learning these helps in writing succinctly and effectively. Here are example questions to practice one-word substitutions.</p>
+        <div class="question">
+            <label>Example Questions:</label>
+            <div>
+                <p>1. What is the one-word substitution for "a person who loves books"?</p>
+                <button onclick="toggleAnswer('oneWord1')">Show Answer</button>
+                <div id="oneWord1" class="answer">Answer: Bibliophile</div>
+            </div>
+            <div>
+                <p>2. What is the one-word substitution for "a person who speaks many languages"?</p>
+                <button onclick="toggleAnswer('oneWord2')">Show Answer</button>
+                <div id="oneWord2" class="answer">Answer: Polyglot</div>
+            </div>
+            <div>
+                <p>3. What is the one-word substitution for "a person who studies insects"?</p>
+                <button onclick="toggleAnswer('oneWord3')">Show Answer</button>
+                <div id="oneWord3" class="answer">Answer: Entomologist</div>
+            </div>
+            <div>
+                <p>4. What is the one-word substitution for "a person who loves to travel"?</p>
+                <button onclick="toggleAnswer('oneWord4')">Show Answer</button>
+                <div id="oneWord4" class="answer">Answer: Wanderlust</div>
+            </div>
+            <div>
+                <p>5. What is the one-word substitution for "a person who is afraid of spiders"?</p>
+                <button onclick="toggleAnswer('oneWord5')">Show Answer</button>
+                <div id="oneWord5" class="answer">Answer: Arachnophobia</div>
+            </div>
+            <div>
+                <p>6. What is the one-word substitution for "a person who studies rocks"?</p>
+                <button onclick="toggleAnswer('oneWord6')">Show Answer</button>
+                <div id="oneWord6" class="answer">Answer: Geologist</div>
+            </div>
+            <div>
+                <p>7. What is the one-word substitution for "a person who studies human behavior"?</p>
+                <button onclick="toggleAnswer('oneWord7')">Show Answer</button>
+                <div id="oneWord7" class="answer">Answer: Psychologist</div>
+            </div>
+            <div>
+                <p>8. What is the one-word substitution for "a person who designs buildings"?</p>
+                <button onclick="toggleAnswer('oneWord8')">Show Answer</button>
+                <div id="oneWord8" class="answer">Answer: Architect</div>
+            </div>
+            <div>
+                <p>9. What is the one-word substitution for "a person who makes maps"?</p>
+                <button onclick="toggleAnswer('oneWord9')">Show Answer</button>
+                <div id="oneWord9" class="answer">Answer: Cartographer</div>
+            </div>
+            <div>
+                <p>10. What is the one-word substitution for "a person who studies the universe"?</p>
+                <button onclick="toggleAnswer('oneWord10')">Show Answer</button>
+                <div id="oneWord10" class="answer">Answer: Astrophysicist</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

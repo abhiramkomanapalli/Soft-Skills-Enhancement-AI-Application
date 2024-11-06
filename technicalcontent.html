@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #d097ec);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .question {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #667eea;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .navigation {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Technical Questions</h1>
+
+    <div class="question">
+        <h3>1. What is the purpose of the HTTP protocol?</h3>
+        <label><input type="radio" name="q1" value="a"> To manage database transactions</label>
+        <label><input type="radio" name="q1" value="b"> To transfer hypertext documents</label>
+        <label><input type="radio" name="q1" value="c"> To control computer hardware</label>
+        <label><input type="radio" name="q1" value="d"> To execute scripts on the server</label>
+        <button onclick="showAnswer('answer1')">Show Answer</button>
+        <div id="answer1" class="answer">Correct Answer: b. To transfer hypertext documents <br>Explanation: HTTP is a protocol used for transmitting hypertext documents over the internet.</div>
+    </div>
+
+    <div class="question">
+        <h3>2. Which of the following languages is commonly used for web development on the client-side?</h3>
+        <label><input type="radio" name="q2" value="a"> Python</label>
+        <label><input type="radio" name="q2" value="b"> Java</label>
+        <label><input type="radio" name="q2" value="c"> JavaScript</label>
+        <label><input type="radio" name="q2" value="d"> C++</label>
+        <button onclick="showAnswer('answer2')">Show Answer</button>
+        <div id="answer2" class="answer">Correct Answer: c. JavaScript <br>Explanation: JavaScript is primarily used on the client-side for creating interactive web pages.</div>
+    </div>
+
+    <div class="question">
+        <h3>3. In databases, what does SQL stand for?</h3>
+        <label><input type="radio" name="q3" value="a"> Sequential Query Language</label>
+        <label><input type="radio" name="q3" value="b"> Structured Query Language</label>
+        <label><input type="radio" name="q3" value="c"> Simple Query Language</label>
+        <label><input type="radio" name="q3" value="d"> Stored Query Language</label>
+        <button onclick="showAnswer('answer3')">Show Answer</button>
+        <div id="answer3" class="answer">Correct Answer: b. Structured Query Language <br>Explanation: SQL is a standard language used to manage and query data in relational databases.</div>
+    </div>
+
+    <div class="question">
+        <h3>4. What is the primary purpose of CSS in web development?</h3>
+        <label><input type="radio" name="q4" value="a"> To structure web content</label>
+        <label><input type="radio" name="q4" value="b"> To style and layout web pages</label>
+        <label><input type="radio" name="q4" value="c"> To connect to databases</label>
+        <label><input type="radio" name="q4" value="d"> To secure web applications</label>
+        <button onclick="showAnswer('answer4')">Show Answer</button>
+        <div id="answer4" class="answer">Correct Answer: b. To style and layout web pages <br>Explanation: CSS (Cascading Style Sheets) is used to design and layout HTML content on web pages.</div>
+    </div>
+
+    <div class="question">
+        <h3>5. In programming, what does “API” stand for?</h3>
+        <label><input type="radio" name="q5" value="a"> Application Processing Interface</label>
+        <label><input type="radio" name="q5" value="b"> Application Programming Interface</label>
+        <label><input type="radio" name="q5" value="c"> Automated Processing Integration</label>
+        <label><input type="radio" name="q5" value="d"> Active Program Interaction</label>
+        <button onclick="showAnswer('answer5')">Show Answer</button>
+        <div id="answer5" class="answer">Correct Answer: b. Application Programming Interface <br>Explanation: API is a set of functions and procedures for interacting with external software components.</div>
+    </div>
+    <div class="question">
+        <h3>6. What does "DNS" stand for in networking?</h3>
+        <label><input type="radio" name="q6" value="a"> Domain Numbering System</label>
+        <label><input type="radio" name="q6" value="b"> Domain Name System</label>
+        <label><input type="radio" name="q6" value="c"> Data Network Service</label>
+        <label><input type="radio" name="q6" value="d"> Digital Name Server</label>
+        <button onclick="showAnswer('answer6')">Show Answer</button>
+        <div id="answer6" class="answer">Correct Answer: b. Domain Name System <br>Explanation: DNS translates domain names into IP addresses, allowing browsers to load internet resources.</div>
+    </div>
+
+    <div class="question">
+        <h3>7. What is the function of the <code>GET</code> method in HTTP?</h3>
+        <label><input type="radio" name="q7" value="a"> To delete data on the server</label>
+        <label><input type="radio" name="q7" value="b"> To retrieve data from the server</label>
+        <label><input type="radio" name="q7" value="c"> To send data to the server</label>
+        <label><input type="radio" name="q7" value="d"> To update data on the server</label>
+        <button onclick="showAnswer('answer7')">Show Answer</button>
+        <div id="answer7" class="answer">Correct Answer: b. To retrieve data from the server <br>Explanation: The <code>GET</code> method requests data from a specified resource on a server.</div>
+    </div>
+
+    <div class="question">
+        <h3>8. Which of the following is a NoSQL database?</h3>
+        <label><input type="radio" name="q8" value="a"> MySQL</label>
+        <label><input type="radio" name="q8" value="b"> PostgreSQL</label>
+        <label><input type="radio" name="q8" value="c"> MongoDB</label>
+        <label><input type="radio" name="q8" value="d"> Oracle</label>
+        <button onclick="showAnswer('answer8')">Show Answer</button>
+        <div id="answer8" class="answer">Correct Answer: c. MongoDB <br>Explanation: MongoDB is a NoSQL database that stores data in JSON-like documents.</div>
+    </div>
+
+    <div class="question">
+        <h3>9. In CSS, which property is used to change the text color of an element?</h3>
+        <label><input type="radio" name="q9" value="a"> background-color</label>
+        <label><input type="radio" name="q9" value="b"> color</label>
+        <label><input type="radio" name="q9" value="c"> font-color</label>
+        <label><input type="radio" name="q9" value="d"> text-color</label>
+        <button onclick="showAnswer('answer9')">Show Answer</button>
+        <div id="answer9" class="answer">Correct Answer: b. color <br>Explanation: The CSS <code>color</code> property changes the text color of an element.</div>
+    </div>
+
+    <div class="question">
+        <h3>10. Which data structure follows the Last In First Out (LIFO) principle?</h3>
+        <label><input type="radio" name="q10" value="a"> Queue</label>
+        <label><input type="radio" name="q10" value="b"> Stack</label>
+        <label><input type="radio" name="q10" value="c"> Array</label>
+        <label><input type="radio" name="q10" value="d"> Linked List</label>
+        <button onclick="showAnswer('answer10')">Show Answer</button>
+        <div id="answer10" class="answer">Correct Answer: b. Stack <br>Explanation: A stack follows the LIFO (Last In First Out) principle, meaning the last element added is the first to be removed.</div>
+    </div>
+
+    <div class="question">
+        <h3>11. Which programming language is known as the foundation of web development for creating web pages?</h3>
+        <label><input type="radio" name="q11" value="a"> C++</label>
+        <label><input type="radio" name="q11" value="b"> HTML</label>
+        <label><input type="radio" name="q11" value="c"> Python</label>
+        <label><input type="radio" name="q11" value="d"> Java</label>
+        <button onclick="showAnswer('answer11')">Show Answer</button>
+        <div id="answer11" class="answer">Correct Answer: b. HTML <br>Explanation: HTML (HyperText Markup Language) is the standard markup language for creating web pages.</div>
+    </div>
+
+    <div class="question">
+        <h3>12. What does "IP" stand for in networking?</h3>
+        <label><input type="radio" name="q12" value="a"> Internet Protocol</label>
+        <label><input type="radio" name="q12" value="b"> Internal Program</label>
+        <label><input type="radio" name="q12" value="c"> Integrated Processing</label>
+        <label><input type="radio" name="q12" value="d"> Interconnected Path</label>
+        <button onclick="showAnswer('answer12')">Show Answer</button>
+        <div id="answer12" class="answer">Correct Answer: a. Internet Protocol <br>Explanation: IP, or Internet Protocol, is responsible for addressing and routing data packets across networks.</div>
+    </div>
+
+    <div class="question">
+        <h3>13. What is the main purpose of a firewall in network security?</h3>
+        <label><input type="radio" name="q13" value="a"> To monitor user activity</label>
+        <label><input type="radio" name="q13" value="b"> To protect against unauthorized access</label>
+        <label><input type="radio" name="q13" value="c"> To store data securely</label>
+        <label><input type="radio" name="q13" value="d"> To transfer files between devices</label>
+        <button onclick="showAnswer('answer13')">Show Answer</button>
+        <div id="answer13" class="answer">Correct Answer: b. To protect against unauthorized access <br>Explanation: Firewalls filter network traffic to prevent unauthorized access to or from a private network.</div>
+    </div>
+
+    <div class="question">
+        <h3>14. Which of the following is an example of a relational database?</h3>
+        <label><input type="radio" name="q14" value="a"> Redis</label>
+        <label><input type="radio" name="q14" value="b"> MongoDB</label>
+        <label><input type="radio" name="q14" value="c"> MySQL</label>
+        <label><input type="radio" name="q14" value="d"> Neo4j</label>
+        <button onclick="showAnswer('answer14')">Show Answer</button>
+        <div id="answer14" class="answer">Correct Answer: c. MySQL <br>Explanation: MySQL is a popular relational database management system that organizes data into tables.</div>
+    </div>
+
+    <div class="question">
+        <h3>15. In JavaScript, which keyword is used to declare a constant variable?</h3>
+        <label><input type="radio" name="q15" value="a"> var</label>
+        <label><input type="radio" name="q15" value="b"> let</label>
+        <label><input type="radio" name="q15" value="c"> const</label>
+        <label><input type="radio" name="q15" value="d"> static</label>
+        <button onclick="showAnswer('answer15')">Show Answer</button>
+        <div id="answer15" class="answer">Correct Answer: c. const <br>Explanation: In JavaScript, <code>const</code> is used to declare variables whose values cannot be changed once assigned.</div>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='technicalnext.html'">Technical Topics</button>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='dashboard.html'">Back to home</button>
+    </div>
+
+    <script>
+        function showAnswer(answerId) {
+            var answerDiv = document.getElementById(answerId);
+            answerDiv.style.display = answerDiv.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

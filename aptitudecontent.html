@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navigation {
+        margin: 20px 0;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aptitude Questions</h1>
+
+    <div class="question">
+        <h3>1. The average of 50 numbers is 38. If two numbers, 45 and 55, are added to the list, what will be the new average?</h3>
+        <label><input type="radio" name="q1" value="a"> 38.5</label>
+        <label><input type="radio" name="q1" value="b"> 39</label>
+        <label><input type="radio" name="q1" value="c"> 40</label>
+        <label><input type="radio" name="q1" value="d"> 41</label>
+        <button onclick="showAnswer('answer1')">Show Answer</button>
+        <div id="answer1" class="answer">Correct Answer: b. 39 <br>Explanation: <br> Total sum of 50 numbers = 50 × 38 = 1900. <br> Adding 45 and 55: 1900 + 45 + 55 = 2000. <br> New average = 2000 / 52 = 38.46 ≈ 39.</div>
+    </div>
+
+    <div class="question">
+        <h3>2. The average age of 20 students in a class is 15 years. When a teacher's age is included, the average age increases by 1 year. What is the age of the teacher?</h3>
+        <label><input type="radio" name="q2" value="a"> 35 years</label>
+        <label><input type="radio" name="q2" value="b"> 36 years</label>
+        <label><input type="radio" name="q2" value="c"> 37 years</label>
+        <label><input type="radio" name="q2" value="d"> 38 years</label>
+        <button onclick="showAnswer('answer2')">Show Answer</button>
+        <div id="answer2" class="answer">Correct Answer: d. 38 years <br>Explanation: <br> Total age of 20 students = 20 × 15 = 300 years. <br> New average for 21 people = 16 years. <br> Total age with teacher = 21 × 16 = 336. <br> Teacher's age = 336 - 300 = 36 years.</div>
+    </div>
+
+    <div class="question">
+        <h3>3. The average weight of a group of 10 people decreases by 1 kg when a person weighing 70 kg is replaced by another person. What is the weight of the new person?</h3>
+        <label><input type="radio" name="q3" value="a"> 60 kg</label>
+        <label><input type="radio" name="q3" value="b"> 65 kg</label>
+        <label><input type="radio" name="q3" value="c"> 70 kg</label>
+        <label><input type="radio" name="q3" value="d"> 75 kg</label>
+        <button onclick="showAnswer('answer3')">Show Answer</button>
+        <div id="answer3" class="answer">Correct Answer: a. 60 kg <br>Explanation: <br> Original average = Total weight / 10. <br> New average = (Total weight - 70 + new weight) / 10 = Original average - 1. <br> Solve to find new weight = 60 kg.</div>
+    </div>
+
+    <div class="question">
+        <h3>4. What is the simple interest on a sum of ₹15000 at 10% per annum for 3 years?</h3>
+        <label><input type="radio" name="q4" value="a"> ₹4000</label>
+        <label><input type="radio" name="q4" value="b"> ₹4500</label>
+        <label><input type="radio" name="q4" value="c"> ₹5000</label>
+        <label><input type="radio" name="q4" value="d"> ₹5500</label>
+        <button onclick="showAnswer('answer4')">Show Answer</button>
+        <div id="answer4" class="answer">Correct Answer: c. ₹4500 <br>Explanation: <br> Simple Interest = Principal × Rate × Time / 100. <br> SI = 15000 × 10 × 3 / 100 = ₹4500.</div>
+    </div>
+
+    <div class="question">
+        <h3>5. A sum of ₹5000 becomes ₹6050 in 2 years at compound interest. What is the rate of interest?</h3>
+        <label><input type="radio" name="q5" value="a"> 8%</label>
+        <label><input type="radio" name="q5" value="b"> 9%</label>
+        <label><input type="radio" name="q5" value="c"> 10%</label>
+        <label><input type="radio" name="q5" value="d"> 12%</label>
+        <button onclick="showAnswer('answer5')">Show Answer</button>
+        <div id="answer5" class="answer">Correct Answer: b. 9% <br>Explanation: <br> Amount = Principal (1 + r/100)^n. <br> 6050 = 5000(1 + r/100)^2. <br> Solve for r to get the rate of interest = 9%.</div>
+    </div>
+
+    <div class="question">
+        <h3>6. What is the compound interest on ₹2000 at 5% per annum for 3 years, compounded annually?</h3>
+        <label><input type="radio" name="q6" value="a"> ₹315.25</label>
+        <label><input type="radio" name="q6" value="b"> ₹315</label>
+        <label><input type="radio" name="q6" value="c"> ₹312.50</label>
+        <label><input type="radio" name="q6" value="d"> ₹310</label>
+        <button onclick="showAnswer('answer6')">Show Answer</button>
+        <div id="answer6" class="answer">Correct Answer: a. ₹315.25 <br>Explanation: <br> Amount = Principal (1 + r/100)^n. <br> Amount = 2000(1 + 0.05)^3. <br> CI = Amount - Principal = 2315.25 - 2000 = ₹315.25.</div>
+    </div>
+
+    <div class="question">
+        <h3>7. How many ways can 5 people be seated in a row if two particular people must always sit together?</h3>
+        <label><input type="radio" name="q7" value="a"> 48</label>
+        <label><input type="radio" name="q7" value="b"> 96</label>
+        <label><input type="radio" name="q7" value="c"> 120</label>
+        <label><input type="radio" name="q7" value="d"> 240</label>
+        <button onclick="showAnswer('answer7')">Show Answer</button>
+        <div id="answer7" class="answer">Correct Answer: b. 96 <br>Explanation: <br> Treat the two particular people as one unit. <br> Total units = 4. Arrangements = 4! × 2! = 48.</div>
+    </div>
+
+    <div class="question">
+        <h3>8. In how many ways can a committee of 3 be formed from 5 people?</h3>
+        <label><input type="radio" name="q8" value="a"> 10</label>
+        <label><input type="radio" name="q8" value="b"> 12</label>
+        <label><input type="radio" name="q8" value="c"> 15</label>
+        <label><input type="radio" name="q8" value="d"> 20</label>
+        <button onclick="showAnswer('answer8')">Show Answer</button>
+        <div id="answer8" class="answer">Correct Answer: a. 10 <br>Explanation: <br> Combination = n! / r!(n - r)! <br> C(5,3) = 5! / 3!2! = 10.</div>
+    </div>
+
+    <div class="question">
+        <h3>9. If a bag contains 3 red balls and 5 blue balls, what is the probability of picking a red ball?</h3>
+        <label><input type="radio" name="q9" value="a"> 3/8</label>
+        <label><input type="radio" name="q9" value="b"> 1/8</label>
+        <label><input type="radio" name="q9" value="c"> 5/8</label>
+        <label><input type="radio" name="q9" value="d"> 1/4</label>
+        <button onclick="showAnswer('answer9')">Show Answer</button>
+        <div id="answer9" class="answer">Correct Answer: a. 3/8 <br>Explanation: <br> Probability = Favorable outcomes / Total outcomes = 3 / (3 + 5) = 3/8.</div>
+    </div>
+
+    <div class="question">
+        <h3>10. A die is rolled once. What is the probability of getting an even number?</h3>
+        <label><input type="radio" name="q10" value="a"> 1/2</label>
+        <label><input type="radio" name="q10" value="b"> 1/3</label>
+        <label><input type="radio" name="q10" value="c"> 1/6</label>
+        <label><input type="radio" name="q10" value="d"> 1/4</label>
+        <button onclick="showAnswer('answer10')">Show Answer</button>
+        <div id="answer10" class="answer">Correct Answer: a. 1/2 <br>Explanation: <br> Even numbers on a die = 2, 4, 6 = 3 favorable outcomes. <br> Probability = 3 / 6 = 1/2.</div>
+    </div>
+
+    <div class="question">
+        <h3>11. If a card is drawn from a standard deck of 52 cards, what is the probability of drawing an Ace?</h3>
+        <label><input type="radio" name="q11" value="a"> 1/13</label>
+        <label><input type="radio" name="q11" value="b"> 1/52</label>
+        <label><input type="radio" name="q11" value="c"> 1/4</label>
+        <label><input type="radio" name="q11" value="d"> 1/26</label>
+        <button onclick="showAnswer('answer11')">Show Answer</button>
+        <div id="answer11" class="answer">Correct Answer: a. 1/13 <br>Explanation: <br> There are 4 Aces in a deck of 52 cards. <br> Probability = 4 / 52 = 1/13.</div>
+    </div>
+
+    <div class="question">
+        <h3>12. What is the value of 5! (5 factorial)?</h3>
+        <label><input type="radio" name="q12" value="a"> 60</label>
+        <label><input type="radio" name="q12" value="b"> 120</label>
+        <label><input type="radio" name="q12" value="c"> 100</label>
+        <label><input type="radio" name="q12" value="d"> 240</label>
+        <button onclick="showAnswer('answer12')">Show Answer</button>
+        <div id="answer12" class="answer">Correct Answer: b. 120 <br>Explanation: <br> 5! = 5 × 4 × 3 × 2 × 1 = 120.</div>
+    </div>
+
+    <div class="question">
+        <h3>13. A train travels 60 km in 1 hour. What is the speed of the train in meters per second?</h3>
+        <label><input type="radio" name="q13" value="a"> 10 m/s</label>
+        <label><input type="radio" name="q13" value="b"> 15 m/s</label>
+        <label><input type="radio" name="q13" value="c"> 20 m/s</label>
+        <label><input type="radio" name="q13" value="d"> 25 m/s</label>
+        <button onclick="showAnswer('answer13')">Show Answer</button>
+        <div id="answer13" class="answer">Correct Answer: c. 20 m/s <br>Explanation: <br> Speed in m/s = (Distance in km × 1000) / (Time in hours × 3600) = (60 × 1000) / (1 × 3600) = 16.67 m/s.</div>
+    </div>
+
+    <div class="question">
+        <h3>14. If 3 times a number is decreased by 12, the result is 21. What is the number?</h3>
+        <label><input type="radio" name="q14" value="a"> 7</label>
+        <label><input type="radio" name="q14" value="b"> 9</label>
+        <label><input type="radio" name="q14" value="c"> 11</label>
+        <label><input type="radio" name="q14" value="d"> 13</label>
+        <button onclick="showAnswer('answer14')">Show Answer</button>
+        <div id="answer14" class="answer">Correct Answer: a. 7 <br>Explanation: <br> Let the number be x. <br> 3x - 12 = 21, <br> 3x = 33, <br> x = 11.</div>
+    </div>
+
+    <div class="question">
+        <h3>15. If the sum of two consecutive integers is 51, what are the integers?</h3>
+        <label><input type="radio" name="q15" value="a"> 25, 26</label>
+        <label><input type="radio" name="q15" value="b"> 24, 25</label>
+        <label><input type="radio" name="q15" value="c"> 26, 27</label>
+        <label><input type="radio" name="q15" value="d"> 23, 24</label>
+        <button onclick="showAnswer('answer15')">Show Answer</button>
+        <div id="answer15" class="answer">Correct Answer: a. 25, 26 <br>Explanation: <br> Let the integers be x and x+1. <br> x + (x + 1) = 51, <br> 2x + 1 = 51, <br> 2x = 50, <br> x = 25.</div>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='aptitudenext.html'">Aptitude Topics</button>
+    </div>
+    <div class="navigation">
+        <button onclick="window.location.href='dashboard.html'">Back to home</button>
+    </div>
+    
+    
+
+    
+
+    <script>
+        function showAnswer(answerId) {
+            const answerDiv = document.getElementById(answerId);
+            answerDiv.style.display = answerDiv.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

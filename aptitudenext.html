@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Topics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            cursor: pointer;
+            color: #f9f9f9;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aptitude Topics</h1>
+
+    <!-- Topic 1: Numbers -->
+    <h2 onclick="toggleContent('topic1')">1. Numbers</h2>
+    <div class="content" id="topic1">
+        <h4>Formulas:</h4>
+        <ul>
+            <li>Divisibility by 2: A number is divisible by 2 if its last digit is even.</li>
+            <li>LCM of two numbers: LCM = (a * b) / GCD(a, b)</li>
+            <li>Prime factorization: Expressing a number as a product of its prime factors.</li>
+            <li>Factorial: n! = n × (n-1) × (n-2) × ... × 1</li>
+            <li>Sum of first n natural numbers: S = n(n + 1)/2</li>
+        </ul>
+
+        <h4>Example Questions:</h4>
+        <div class="question">
+            <p>1. What is the LCM of 12 and 15?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 60</div>
+        </div>
+        <div class="question">
+            <p>2. Find the sum of the first 10 natural numbers.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 55</div>
+        </div>
+        <div class="question">
+            <p>3. Is 29 a prime number?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: Yes</div>
+        </div>
+        <div class="question">
+            <p>4. What is 5 factorial (5!)?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 120</div>
+        </div>
+        <div class="question">
+            <p>5. Find the GCD of 48 and 60.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 12</div>
+        </div>
+    </div>
+
+    <!-- Topic 2: Percentage -->
+    <h2 onclick="toggleContent('topic2')">2. Percentage</h2>
+    <div class="content" id="topic2">
+        <h4>Formulas:</h4>
+        <ul>
+            <li>Percentage formula: (Value / Total Value) × 100%</li>
+            <li>Percentage increase = [(New Value - Old Value) / Old Value] × 100%</li>
+            <li>Percentage decrease = [(Old Value - New Value) / Old Value] × 100%</li>
+            <li>Profit Percentage = (Profit / Cost Price) × 100%</li>
+            <li>Loss Percentage = (Loss / Cost Price) × 100%</li>
+        </ul>
+
+        <h4>Example Questions:</h4>
+        <div class="question">
+            <p>1. What is 20% of 150?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 30</div>
+        </div>
+        <div class="question">
+            <p>2. If the price increases from 100 to 120, what is the percentage increase?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 20%</div>
+        </div>
+        <div class="question">
+            <p>3. Find 15% profit on a cost price of 200.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 30</div>
+        </div>
+        <div class="question">
+            <p>4. A product was sold at a loss of 10%, if the cost price was 500, what was the loss?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 50</div>
+        </div>
+        <div class="question">
+            <p>5. Find the percentage decrease if a value drops from 300 to 240.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 20%</div>
+        </div>
+    </div>
+
+    <!-- Topic 3: Profit and Loss -->
+    <h2 onclick="toggleContent('topic3')">3. Profit and Loss</h2>
+    <div class="content" id="topic3">
+        <h4>Formulas:</h4>
+        <ul>
+            <li>Profit = Selling Price - Cost Price</li>
+            <li>Loss = Cost Price - Selling Price</li>
+            <li>Profit Percentage = (Profit / Cost Price) × 100%</li>
+            <li>Loss Percentage = (Loss / Cost Price) × 100%</li>
+            <li>Discount = Marked Price - Selling Price</li>
+        </ul>
+
+        <h4>Example Questions:</h4>
+        <div class="question">
+            <p>1. If the cost price is 100 and selling price is 120, what is the profit?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 20</div>
+        </div>
+        <div class="question">
+            <p>2. If a shopkeeper sold a product at a 10% loss, what is the selling price of a 200 item?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 180</div>
+        </div>
+        <div class="question">
+            <p>3. Find the profit percentage if a product was bought for 250 and sold for 300.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 20%</div>
+        </div>
+        <div class="question">
+            <p>4. If a product with a marked price of 500 was sold at a 10% discount, what is the selling price?</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 450</div>
+        </div>
+        <div class="question">
+            <p>5. Find the loss percentage if a product was bought for 600 and sold for 480.</p>
+            <button onclick="showAnswer(this)">Show Answer</button>
+            <div class="answer">Answer: 20%</div>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('topic4')">4. Average</h2>
+<div class="content" id="topic4">
+    <h4>Formulas:</h4>
+    <ul>
+        <li>Average = (Sum of all values) / (Number of values)</li>
+        <li>If all numbers are increased by the same value, the average increases by the same value.</li>
+        <li>If all numbers are multiplied by the same value, the average is also multiplied by that value.</li>
+        <li>Average of first n natural numbers = (n + 1) / 2</li>
+        <li>Average of consecutive numbers = (First Number + Last Number) / 2</li>
+    </ul>
+    <h4>Example Questions:</h4>
+    <div class="question">
+        <p>1. Find the average of 10, 20, 30, 40, and 50.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 30</div>
+    </div>
+    <div class="question">
+        <p>2. The average of 5 numbers is 20. If one of the numbers is 10, find the sum of the other four numbers.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 90</div>
+    </div>
+    <div class="question">
+        <p>3. The average weight of 8 men is 75 kg. One man weighing 80 kg leaves and a new man weighing 70 kg joins. What is the new average weight?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 74.375 kg</div>
+    </div>
+    <div class="question">
+        <p>4. Find the average of the first 50 natural numbers.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 25.5</div>
+    </div>
+    <div class="question">
+        <p>5. The average of 10, 20, and 30 is added to the average of 40, 50, and 60. What is the result?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 70</div>
+    </div>
+</div>
+
+<h2 onclick="toggleContent('topic5')">5. Ratio and Proportion</h2>
+<div class="content" id="topic5">
+    <h4>Formulas:</h4>
+    <ul>
+        <li>If a : b = c : d, then a/b = c/d.</li>
+        <li>Ratio of two quantities a and b = a : b.</li>
+        <li>Proportion: If a/b = c/d, then a : b :: c : d.</li>
+        <li>Sum of the terms in ratio a : b = a + b.</li>
+        <li>If a/b = c/d = e/f = ..., then (a + c + e + ...) / (b + d + f + ...) = a/b.</li>
+    </ul>
+    <h4>Example Questions:</h4>
+    <div class="question">
+        <p>1. If the ratio of ages of two people is 3:5 and the sum of their ages is 40, find their ages.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: Ages are 15 and 25.</div>
+    </div>
+    <div class="question">
+        <p>2. Divide $600 in the ratio 2:3 between two people.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: $240 and $360.</div>
+    </div>
+    <div class="question">
+        <p>3. If 2 : 3 :: 4 : x, find the value of x.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: x = 6.</div>
+    </div>
+    <div class="question">
+        <p>4. A recipe requires ingredients in the ratio 4 : 5. If 20g of the first ingredient is used, how much of the second is needed?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 25g of the second ingredient.</div>
+    </div>
+    <div class="question">
+        <p>5. Find the third proportional to 4 and 8.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 16.</div>
+    </div>
+</div>
+ 
+<h2 onclick="toggleContent('topic6')">6. Mixture and Alligation</h2>
+<div class="content" id="topic6">
+    <h4>Formulas:</h4>
+    <ul>
+        <li>Mean Price = (C1 × Q1 + C2 × Q2) / (Q1 + Q2).</li>
+        <li>Alligation Rule: (C2 - Mean) : (Mean - C1).</li>
+        <li>Final Quantity Ratio in a Mixture = C1 : C2.</li>
+        <li>For repeated replacement, Quantity left = Initial Quantity × (1 - Replaced Fraction)^n.</li>
+        <li>Final mixture price = (Price1 × Qty1 + Price2 × Qty2) / Total Qty.</li>
+    </ul>
+    <h4>Example Questions:</h4>
+    <div class="question">
+        <p>1. Mix two types of rice at Rs. 20/kg and Rs. 30/kg to get a mixture at Rs. 25/kg. Find the ratio of quantities.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 1 : 1.</div>
+    </div>
+    <div class="question">
+        <p>2. A 20L mixture has a 3:1 milk to water ratio. How much water to add to make it 1:1?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: Add 10L of water.</div>
+    </div>
+    <div class="question">
+        <p>3. How much water should be added to 60L of a 3% salt solution to make it 1% salt?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: Add 120L of water.</div>
+    </div>
+    <div class="question">
+        <p>4. In a 60L mixture of milk and water in 7:5, how much milk is there?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 35L of milk.</div>
+    </div>
+    <div class="question">
+        <p>5. Find the quantity ratio to mix liquids costing Rs. 30 and Rs. 50 per liter to get a mixture at Rs. 40.</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 1 : 1.</div>
+    </div>
+</div>
+
+
+<h2 onclick="toggleContent('topic7')">7. Time and Work</h2>
+<div class="content" id="topic7">
+    <h4>Formulas:</h4>
+    <ul>
+        <li>If A can do work in X days, then A's 1 day's work = 1/X.</li>
+        <li>If A is X times as efficient as B, ratio of work done by A : B = X : 1.</li>
+        <li>Work = Rate × Time.</li>
+        <li>Combined work rate of A and B = A's rate + B's rate.</li>
+        <li>If A, B, and C can do work alone in X, Y, Z days, together they can do work in 1/(1/X + 1/Y + 1/Z) days.</li>
+    </ul>
+    <h4>Example Questions:</h4>
+    <div class="question">
+        <p>1. A can finish work in 5 days, B in 10 days. How many days if they work together?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 3.33 days.</div>
+    </div>
+    <div class="question">
+        <p>2. If A completes work in 6 days and B in 8, what fraction of work is left after 2 days of working together?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 5/12 work left.</div>
+    </div>
+    <div class="question">
+        <p>3. C is twice as efficient as D. Together they can do a job in 12 days. How long will it take D alone?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 36 days.</div>
+    </div>
+    <div class="question">
+        <p>4. A, B, and C can complete work in 10, 20, and 30 days, respectively. How many days if all work together?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 5.45 days.</div>
+    </div>
+    <div class="question">
+        <p>5. If A is 50% more efficient than B and together they complete work in 18 days, how long would B take alone?</p>
+        <button onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: 45 days.</div>
+    </div>
+</div>
+
+    <!-- Additional topics follow the same format -->
+
+    <script>
+        function toggleContent(topic) {
+            const content = document.getElementById(topic);
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+
+        function showAnswer(button) {
+            const answerDiv = button.nextElementSibling;
+            answerDiv.style.display = answerDiv.style.display === "none" || answerDiv.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

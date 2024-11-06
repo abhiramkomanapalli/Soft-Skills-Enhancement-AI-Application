@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Soft Skills Enhancement AI</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Dashboard Content */
+        .dashboard-content {
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .dashboard-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Modules List */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #764ba2;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #764ba2;
+            color: #fff;
+            border: 2px solid #667eea;
+        }
+
+        /* Quick Access Buttons */
+        .quick-access {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .quick-access button {
+            background-color: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            margin-top: 10px; /* Added margin for spacing */
+        }
+
+        .quick-access button:hover {
+            background-color: #764ba2;
+        }
+
+        /* Features Section */
+        .features-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .features-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #764ba2;
+        }
+
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .feature-text {
+            flex-grow: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .dashboard-content h2 {
+                font-size: 1.8em;
+            }
+
+            .dashboard-content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your learning modules and track your progress.</p>
+    </header>
+
+    <div class="dashboard-content">
+        <div class="quick-access">
+            <p>Take a test to check your proficiency in each section:</p>
+            <button onclick="location.href='test.html'">Take Test</button>
+        </div>
+        <h2>Your Learning Modules</h2>
+
+        <p>Select a module to enhance your skills:</p>
+        <ul>
+            <li><a href="vacabcontent.html">Vocabulary Module</a></li>
+            <li><a href="grammarcontent.html">Grammar Module</a></li>
+            <li><a href="aptitudecontent.html">Aptitude Module</a></li>
+            <li><a href="technicalcontent.html">Technical Skills Module</a></li>
+        </ul>
+
+        <div class="features-section">
+            <h3>Key Features</h3>
+            <div class="feature">
+                <img src="personalizedfeedback.jpeg" alt="Feature 1">
+                <div class="feature-text">
+                    <h4>Personalized Learning Paths</h4>
+                    <p>Get tailored recommendations based on your progress.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="progresstracking.jpeg" alt="Feature 2">
+                <div class="feature-text">
+                    <h4>Progress Tracking</h4>
+                    <p>Monitor your improvement over time with detailed analytics.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="interactivelearning.jpeg" alt="Feature 3">
+                <div class="feature-text">
+                    <h4>Interactive Quizzes</h4>
+                    <p>Test your skills with engaging quizzes after each module.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soft Skills Enhancement AI Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>

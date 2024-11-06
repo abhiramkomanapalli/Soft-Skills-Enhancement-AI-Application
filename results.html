@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .results-container {
+            margin: auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #2575fc;
+        }
+        button {
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #6a11cb;
+        }
+        #proficiencyResult, #recommendation {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #proficiencyResult {
+            color: #FFD700; /* Gold color */
+        }
+    </style>
+</head>
+<body>
+    <div class="results-container">
+        <h2>Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Total Questions</th>
+                    <th>Attempted Questions</th>
+                    <th>Total Marks</th>
+                    <th>Marks Obtained</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vocabulary</td>
+                    <td>15</td>
+                    <td id="vocabAttempted"></td>
+                    <td>15</td>
+                    <td id="vocabScore"></td>
+                </tr>
+                <tr>
+                    <td>Grammar</td>
+                    <td>15</td>
+                    <td id="grammarAttempted"></td>
+                    <td>15</td>
+                    <td id="grammarScore"></td>
+                </tr>
+                <tr>
+                    <td>Aptitude</td>
+                    <td>15</td>
+                    <td id="aptitudeAttempted"></td>
+                    <td>15</td>
+                    <td id="aptitudeScore"></td>
+                </tr>
+                <tr>
+                    <td>Technical Skills</td>
+                    <td>15</td>
+                    <td id="technicalAttempted"></td>
+                    <td>15</td>
+                    <td id="technicalScore"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="totalMarks"></h3>
+        <button onclick="window.location.href='test.html'">Take Test Again</button>
+        <div id="proficiencyResult"></div>
+        <div id="recommendation"></div>
+    </div>
+
+    <script>
+        function calculateResults() {
+            const vocabAnswers = JSON.parse(localStorage.getItem('vocabAnswers')) || {};
+            const grammarAnswers = JSON.parse(localStorage.getItem('grammarAnswers')) || {};
+            const aptitudeAnswers = JSON.parse(localStorage.getItem('aptitudeAnswers')) || {};
+            const technicalAnswers = JSON.parse(localStorage.getItem('technicalAnswers')) || {};
+
+            const correctAnswers = {
+                vocab: ['b', 'b', 'a', 'c', 'b', 'a', 'a', 'a', 'b', 'c', 'a', 'b', 'a', 'a', 'a'],
+                grammar: ['b', 'a', 'b', 'b', 'b', 'c', 'a', 'a', 'b', 'a', 'b', 'a', 'c', 'a', 'c'],
+                aptitude: ['b', 'd', 'a', 'b', 'c', 'a', 'd', 'd', 'a', 'd', 'b', 'b', 'c', 'd', 'd'],
+                technical: ['d', 'd', 'a', 'a', 'd', 'b', 'd', 'b', 'a', 'c', 'b', 'c', 'b', 'c', 'a'],
+            };
+
+            function calculateScore(answers, correct) {
+                let score = 0;
+                let attempted = 0;
+                for (let i = 1; i <= 15; i++) {
+                    if (answers[`vocab${i}`] || answers[`grammar${i}`] || answers[`aptitude${i}`] || answers[`technical${i}`]) {
+                        attempted++;
+                        if (answers[`vocab${i}`] === correct[i - 1] || 
+                            answers[`grammar${i}`] === correct[i - 1] || 
+                            answers[`aptitude${i}`] === correct[i - 1] || 
+                            answers[`technical${i}`] === correct[i - 1]) {
+                            score++;
+                        }
+                    }
+                }
+                return { score, attempted };
+            }
+
+            const vocabResult = calculateScore(vocabAnswers, correctAnswers.vocab);
+            const grammarResult = calculateScore(grammarAnswers, correctAnswers.grammar);
+            const aptitudeResult = calculateScore(aptitudeAnswers, correctAnswers.aptitude);
+            const technicalResult = calculateScore(technicalAnswers, correctAnswers.technical);
+
+            document.getElementById('vocabAttempted').innerText = vocabResult.attempted;
+            document.getElementById('vocabScore').innerText = vocabResult.score;
+
+            document.getElementById('grammarAttempted').innerText = grammarResult.attempted;
+            document.getElementById('grammarScore').innerText = grammarResult.score;
+
+            document.getElementById('aptitudeAttempted').innerText = aptitudeResult.attempted;
+            document.getElementById('aptitudeScore').innerText = aptitudeResult.score;
+
+            document.getElementById('technicalAttempted').innerText = technicalResult.attempted;
+            document.getElementById('technicalScore').innerText = technicalResult.score;
+
+            const totalScore = vocabResult.score + grammarResult.score + aptitudeResult.score + technicalResult.score;
+            document.getElementById('totalMarks').innerText = `Total Marks Obtained: ${totalScore} / 60`;
+
+            const lowScoreSections = [];
+            if (vocabResult.score < 7) lowScoreSections.push({ name: 'Vocabulary', link: 'vacabcontent.html' });
+            if (grammarResult.score < 7) lowScoreSections.push({ name: 'Grammar', link: 'grammarcontent.html' });
+            if (aptitudeResult.score < 7) lowScoreSections.push({ name: 'Aptitude', link: 'aptitudecontent.html' });
+            if (technicalResult.score < 7) lowScoreSections.push({ name: 'Technical Skills', link: 'technicalcontent.html' });
+
+            if (lowScoreSections.length > 0) {
+                const recommendation = document.getElementById('recommendation');
+                recommendation.innerHTML = `<p>Based on your performance, we recommend you concentrate on the following sections:</p>`;
+                lowScoreSections.forEach(section => {
+                    const button = document.createElement('button');
+                    button.innerText = section.name;
+                    button.onclick = () => window.location.href = section.link;
+                    recommendation.appendChild(button);
+                });
+            }
+        }
+
+        window.onload = calculateResults;
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: none;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d097ec;
+        }
+    </style>
+</head>
+<body>
+    <div class="technical-container">
+        <h2>Technical Skills Section</h2>
+        <form id="technicalForm">
+            <!-- 2 Finding Output of C Code Snippets -->
+            <div class="question">
+                <p>1. What is the output of the following C code snippet?<br>
+                <code>
+                #include &lt;stdio.h&gt;<br>
+                int main() {<br>
+                &nbsp;&nbsp;int a = 5;<br>
+                &nbsp;&nbsp;printf("%d", ++a + a++);<br>
+                &nbsp;&nbsp;return 0;<br>
+                }
+                </code>
+                </p>
+                <label><input type="radio" name="technical1" value="a"> 11</label>
+                <label><input type="radio" name="technical1" value="b"> 12</label>
+                <label><input type="radio" name="technical1" value="c"> 13</label>
+                <label><input type="radio" name="technical1" value="d"> Undefined behavior</label>
+            </div>
+            <div class="question">
+                <p>2. What will be the output of the following C code snippet?<br>
+                <code>
+                #include &lt;stdio.h&gt;<br>
+                void main() {<br>
+                &nbsp;&nbsp;int x = 10, y;<br>
+                &nbsp;&nbsp;y = x++ + ++x;<br>
+                &nbsp;&nbsp;printf("%d", y);<br>
+                }
+                </code>
+                </p>
+                <label><input type="radio" name="technical2" value="a"> 21</label>
+                <label><input type="radio" name="technical2" value="b"> 22</label>
+                <label><input type="radio" name="technical2" value="c"> 23</label>
+                <label><input type="radio" name="technical2" value="d"> 24</label>
+            </div>
+
+            <!-- 2 Finding Errors in Code -->
+            <div class="question">
+                <p>3. Identify the error in the following C code:<br>
+                <code>
+                #include &lt;stdio.h&gt;<br>
+                int main() {<br>
+                &nbsp;&nbsp;int arr[5];<br>
+                &nbsp;&nbsp;for(int i = 0; i &lt;= 5; i++) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;arr[i] = i;<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;return 0;<br>
+                }
+                </code>
+                </p>
+                <label><input type="radio" name="technical3" value="a"> The array index is out of bounds.</label>
+                <label><input type="radio" name="technical3" value="b"> Syntax error in for loop.</label>
+                <label><input type="radio" name="technical3" value="c"> Missing return statement.</label>
+                <label><input type="radio" name="technical3" value="d"> No error.</label>
+            </div>
+            <div class="question">
+                <p>4. What is wrong with the following C code?<br>
+                <code>
+                #include &lt;stdio.h&gt;<br>
+                int main() {<br>
+                &nbsp;&nbsp;char *ptr;<br>
+                &nbsp;&nbsp;*ptr = 'A';<br>
+                &nbsp;&nbsp;printf("%c", *ptr);<br>
+                &nbsp;&nbsp;return 0;<br>
+                }
+                </code>
+                </p>
+                <label><input type="radio" name="technical4" value="a"> The pointer is not initialized before use.</label>
+                <label><input type="radio" name="technical4" value="b"> Cannot assign character to a pointer.</label>
+                <label><input type="radio" name="technical4" value="c"> printf syntax is incorrect.</label>
+                <label><input type="radio" name="technical4" value="d"> No error.</label>
+            </div>
+
+            <!-- 2 Object-Oriented Programming (OOP) -->
+            <div class="question">
+                <p>5. Which of the following is not a feature of OOP?</p>
+                <label><input type="radio" name="technical5" value="a"> Encapsulation</label>
+                <label><input type="radio" name="technical5" value="b"> Inheritance</label>
+                <label><input type="radio" name="technical5" value="c"> Polymorphism</label>
+                <label><input type="radio" name="technical5" value="d"> Compilation</label>
+            </div>
+            <div class="question">
+                <p>6. What is the output of the following C++ code?<br>
+                <code>
+                #include &lt;iostream&gt;<br>
+                using namespace std;<br>
+                class Base {<br>
+                &nbsp;&nbsp;public:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;virtual void show() { cout &lt;&lt; "Base"; }<br>
+                };<br>
+                class Derived : public Base {<br>
+                &nbsp;&nbsp;public:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;void show() { cout &lt;&lt; "Derived"; }<br>
+                };<br>
+                int main() {<br>
+                &nbsp;&nbsp;Base *b = new Derived();<br>
+                &nbsp;&nbsp;b-&gt;show();<br>
+                &nbsp;&nbsp;return 0;<br>
+                }
+                </code>
+                </p>
+                <label><input type="radio" name="technical6" value="a"> Base</label>
+                <label><input type="radio" name="technical6" value="b"> Derived</label>
+                <label><input type="radio" name="technical6" value="c"> Error at runtime</label>
+                <label><input type="radio" name="technical6" value="d"> Compilation error</label>
+            </div>
+
+            <!-- 2 Operating Systems (OS) -->
+            <div class="question">
+                <p>7. Which of the following scheduling algorithms may lead to starvation?</p>
+                <label><input type="radio" name="technical7" value="a"> First-Come, First-Served</label>
+                <label><input type="radio" name="technical7" value="b"> Shortest Job First</label>
+                <label><input type="radio" name="technical7" value="c"> Round Robin</label>
+                <label><input type="radio" name="technical7" value="d"> Priority Scheduling</label>
+            </div>
+            <div class="question">
+                <p>8. In the context of operating systems, what is a semaphore?</p>
+                <label><input type="radio" name="technical8" value="a"> A type of hardware device</label>
+                <label><input type="radio" name="technical8" value="b"> A signaling mechanism to manage concurrent processes</label>
+                <label><input type="radio" name="technical8" value="c"> A memory allocation technique</label>
+                <label><input type="radio" name="technical8" value="d"> None of the above</label>
+            </div>
+
+            <!-- 2 Computer Networks (CN) -->
+            <div class="question">
+                <p>9. Which layer in the OSI model is responsible for process-to-process communication?</p>
+                <label><input type="radio" name="technical9" value="a"> Transport Layer</label>
+                <label><input type="radio" name="technical9" value="b"> Network Layer</label>
+                <label><input type="radio" name="technical9" value="c"> Session Layer</label>
+                <label><input type="radio" name="technical9" value="d"> Application Layer</label>
+            </div>
+            <div class="question">
+                <p>10. What is the subnet mask of a class C IP address?</p>
+                <label><input type="radio" name="technical10" value="a"> 255.0.0.0</label>
+                <label><input type="radio" name="technical10" value="b"> 255.255.0.0</label>
+                <label><input type="radio" name="technical10" value="c"> 255.255.255.0</label>
+                <label><input type="radio" name="technical10" value="d"> 255.255.255.255</label>
+            </div>
+
+            <!-- 3 HTML, CSS, JavaScript -->
+            <div class="question">
+                <p>11. In CSS, what does the 'Z-index' property control?</p>
+                <label><input type="radio" name="technical11" value="a"> The vertical positioning of an element</label>
+                <label><input type="radio" name="technical11" value="b"> The stacking order of positioned elements</label>
+                <label><input type="radio" name="technical11" value="c"> The horizontal positioning of an element</label>
+                <label><input type="radio" name="technical11" value="d"> The transparency of an element</label>
+            </div>
+            <div class="question">
+                <p>12. What will be the output of the following JavaScript code?<br>
+                <code>
+                console.log(typeof NaN);
+                </code>
+                </p>
+                <label><input type="radio" name="technical12" value="a"> "NaN"</label>
+                <label><input type="radio" name="technical12" value="b"> "undefined"</label>
+                <label><input type="radio" name="technical12" value="c"> "number"</label>
+                <label><input type="radio" name="technical12" value="d"> "object"</label>
+            </div>
+            <div class="question">
+                <p>13. Which HTML5 element is used to define navigation links?</p>
+                <label><input type="radio" name="technical13" value="a"> &lt;navigation&gt;</label>
+                <label><input type="radio" name="technical13" value="b"> &lt;nav&gt;</label>
+                <label><input type="radio" name="technical13" value="c"> &lt;navigate&gt;</label>
+                <label><input type="radio" name="technical13" value="d"> &lt;links&gt;</label>
+            </div>
+
+            <!-- 2 SQL -->
+            <div class="question">
+                <p>14. Which SQL statement is used to extract data from a database?</p>
+                <label><input type="radio" name="technical14" value="a"> GET</label>
+                <label><input type="radio" name="technical14" value="b"> OPEN</label>
+                <label><input type="radio" name="technical14" value="c"> SELECT</label>
+                <label><input type="radio" name="technical14" value="d"> EXTRACT</label>
+            </div>
+            <div class="question">
+                <p>15. What does the SQL 'JOIN' clause do?</p>
+                <label><input type="radio" name="technical15" value="a"> Combines rows from two or more tables</label>
+                <label><input type="radio" name="technical15" value="b"> Deletes rows in a table</label>
+                <label><input type="radio" name="technical15" value="c"> Updates existing records</label>
+                <label><input type="radio" name="technical15" value="d"> Creates a new table</label>
+            </div>
+            <button type="button" onclick="submitTechnical()">Submit</button>
+            </form>
+        </div>
+
+    <script>
+        function submitTechnical() {
+            const technicalAnswers = {};
+            const form = document.getElementById('technicalForm');
+
+            for (let i = 1; i <= 15; i++) {
+                const answer = form['technical' + i] ? form['technical' + i].value : null;
+                technicalAnswers['technical' + i] = answer;
+            }
+
+            localStorage.setItem('technicalAnswers', JSON.stringify(technicalAnswers));
+            window.location.href = 'results.html'; // Redirect to results page
+        }
+    </script>
+</body>
+</html>
